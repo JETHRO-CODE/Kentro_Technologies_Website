@@ -1,0 +1,842 @@
+     *
+     {
+         margin: 0;
+         padding: 0;
+     }
+
+
+
+     html, body{
+         height: 100%;
+         box-sizing: border-box;
+         font-size: 16px;
+         font-family: sans-serif, arial, verdana, 'Times New Roman';
+         line-height: 1.5;
+         background-color: white;
+     }
+
+     .top_bar_container
+     {
+        background-color: seagreen;
+        padding: 5px 50px;
+        color: black;
+     }
+     .number
+     {
+         float: right;
+     }
+     .email
+     {
+         justify-items: center;
+     }
+
+    /*Navigation Bar Styling*/
+    
+    .header_container .dropdown_item
+    {
+        display: none;
+        position: absolute;
+        background-color: rgb(235, 231, 223);
+        right: 2px;
+        top: 80px;
+        flex-direction: column;
+        width: 200px;
+        padding: 0 20px;
+    }
+
+    .header_container  .hamburger
+    {
+        display: hidden;
+    }
+
+     .header_container
+     {
+      background-color: rgb(235, 231, 223);
+      padding: 10px 50px;
+      
+      position: sticky;
+      top: 0;
+      display: flex;
+      z-index: 2;
+     }
+
+     .header_container img
+     {
+      width: 100px;
+     }
+      
+     .header_container img:hover
+     {
+        opacity: 0.7;
+        transition: 0.5s ease;
+       }
+
+     .header_container ul
+     {
+         list-style: none;
+         display: flex;
+         margin-left: auto;
+     }
+
+     .header_container ul li
+     {
+         padding: 0px 15px;
+         margin-top: 5px;
+     }
+
+     .header_container ul li a
+     {
+        text-decoration: none;
+        color: black;
+     }
+
+    
+     .header_container ul li a:hover
+     {
+        color: wheat;
+        transition: 0.5s ease;
+     }
+     /*WHY*/
+     .why
+     {
+         text-align: center;
+         margin-top: 30px;
+     }
+
+      /*SLIDER STYLING*/
+      .slider_container{
+        overflow: hidden;
+      }
+
+      .slider_container figure{
+      display: flex;
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      animation: 20s slider infinite;
+      }
+
+    @keyframes slider{
+    0%{left:0; transform: scale(1.5); opacity: 0.5;}
+    20%{left:0; transform: scale(1); opacity: 1; }
+    25%{left:-100%; transform: scale(1.2); opacity: 0.5;}
+    45%{left:-100%; transform: scale(1); opacity: 1;}
+    50%{left:-200%;}
+    70%{left:-200%;}
+    75%{left:-300%;}
+    95%{left:-300%;}
+    100%{left:-400%;}
+
+    }
+
+      .slider_container figure img{
+          width: 20%;
+      }
+     /* .slider_container
+      {
+          background-image: url(../images/slider/s.jpeg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 720px;
+          box-shadow: 0px 1px 10px silver;
+      }
+*/
+
+     /*HOMEPAGE PRODUCT STYLING*/
+     .homepage_container{
+        padding: 50px;
+        text-align: center;
+     }
+     
+     .product_container_home 
+     {
+         display: flex;
+         padding: 10px;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .product_container
+     {
+         display: flex;
+         padding: 10px;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .product h4
+     {
+         padding: 10px;
+         color: darkblue;
+     }
+ 
+     .product:hover
+     {
+         opacity: 0.8;
+         height: 303px;
+         box-shadow: 0px 1px 10px silver;
+         transition: all 0.5s ease;
+         border: 2px solid gold;
+     }
+     .product
+     {
+         width: 250px;
+         height: 295px;
+         background-color: white;
+         box-shadow: 0px 1px 10px silver;
+         margin: 10px 20px;
+         overflow: hidden;
+         text-align: center;
+     }
+
+     .product img{
+         width: 100%;
+     }
+     
+     .product_button
+     {
+       background-color: black;
+       padding: 15px 30px;
+       border-radius: 30px;
+       color: white;
+       margin-bottom: 20px;
+       border: 0;
+       font-size: 20px;
+       cursor: pointer;
+     }
+
+     .product_button:hover
+     {
+         background-color: seagreen;
+         box-shadow: 0px 1px 10px silver;
+         transition: all 0.5s ease;
+     }
+
+    
+     /*TESTIMONIAL STYLING*/
+    .testimonials
+    {
+        display: flex;
+     background-color: seagreen;
+     font-weight: 400;
+     color: black;
+     padding: 50px;
+    }
+
+    .head
+    {
+        color: black;
+        background-color: seagreen;
+        text-align: center;
+    }
+
+    .content 
+    {
+     background-color: seagreen;
+     margin-top: 20px;
+     color: seagreen;
+    }
+
+
+    .text
+    {
+        text-align: left;
+        padding: 17px;
+         flex: 1;
+         margin-top: 0px;
+         margin-left: 60px;
+         margin-right: 60px;
+         margin-bottom: 50px;
+    }
+    
+
+     /*FOOTER STYLING*/
+     .footer1{
+      
+     display: flex;
+     background-color: rgb(61, 57, 57);
+     font-weight: 400;
+     color: whitesmoke;
+     padding: 15px;
+     }
+
+     .p 
+     {
+     font-family: "Times New Roman", Times, serif;
+     }
+
+     .footer_column
+     {
+         text-align: left;
+        padding: 20px;
+         flex: 1;
+     }
+    
+     .footer_column p
+     {
+       list-style: none;
+     }
+
+     .footer2
+     {
+      text-align: center;
+      
+      background-color: rgb(43, 40, 40);
+      color: whitesmoke;
+      padding: 20px;
+     }
+
+     .fa-color
+     {
+         color: green;
+     }
+
+     .fa-color1
+     {
+         color: purple;
+     }
+     .fa-color2
+     {
+         color: rgb(77, 77, 232);
+     }
+
+
+    /*OTHER PAGES CONTAINER*/
+
+    .main_container
+    {
+     display: flex;
+    }
+
+    .main_container > div {
+    text-align: center;
+    padding: 20px;
+    }
+
+    /*SIDEBAR*/
+    .side_bar
+    {
+      flex-basis: 200px;
+      box-shadow: 4px 1px 5px silver;
+      max-width: 300px;
+    }
+
+    /*OTHER PAGES CONTENT*/
+    .main_body{
+        flex: 1;
+    }
+    .title
+    {
+        box-shadow: 0px 1px 10px silver;
+        text-align: center;
+        padding: 20px;
+        z-index: 5;
+        background-color: white;
+    }
+
+    .header_container .display
+    {
+        display: block;
+    }
+
+
+  /*Responsive Media Querry*/
+@media only screen and (max-width:1246px)
+{
+    .main_container_blog
+{
+    padding: 200px;
+}
+    .main_container
+    {
+        flex-direction: column;
+    }
+    .side_bar
+    {
+        display: flex;
+        align-items: center;
+        order: 1;
+    }
+    
+    .footer1
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_column
+    {
+      text-align: center;
+    }
+    .testimonials
+    {
+        display: grid;
+    }
+    .questions h2
+    {
+        margin-left: 0;
+    }
+    .button
+    {
+       margin-top: 20px;
+       float: left;
+    }
+   
+}
+
+@media only screen and (max-width:1043px)
+{
+    .main_container_blog
+{
+    padding: 200px;
+}
+    .product
+    {
+        max-width: 250px;
+    }
+    .product_container
+     {
+         flex-wrap: wrap;
+    
+     }
+     .product_button
+     {
+         margin-top: 30px;
+     }
+     .product_sidebar
+     {
+         display: flex;
+     }
+     .product_container_home
+     {
+        flex-wrap: wrap;
+     }
+     .why_trade1
+     {
+       display: grid;   
+     }
+     .our_mission_container
+     {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+     }
+     .our_mission
+     {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+     }
+}
+
+@media only screen and (min-width:1246px){
+.our_mission{
+margin-left: 180px;
+margin-right: 400px;
+}
+.main_container_blog
+{
+    padding: 200px;
+}
+}
+
+@media only screen and (max-width:744px) {
+    .floating_picture{
+        display: grid;
+    }
+    .floating_text
+    {
+        display: grid;
+    }
+}
+
+@media only screen and (min-width:744px) {
+    .floating_image{
+        display: flex;
+    }
+}
+@media only screen and (min-width:910px) {
+    .why_trade
+    {
+      display: flex; 
+      width: auto;  
+    }
+    
+}
+
+@media only screen and (max-width:910px) {
+    .why_trade1
+    {
+      display: column; 
+      width: auto;  
+    }
+    .main_container_blog
+{
+    padding: 150px;
+}
+}
+
+@media only screen and (max-width:450px) {
+.questions h2{
+    margin-bottom: 40px;
+}
+}
+
+@media only screen and (max-width:710px)
+ {
+    .main_container_blog
+    {
+        padding: 100px;
+    }
+   .header_container .menu_item
+   {
+       display: none;
+   }    
+   .header_container .hamburger
+   {
+       display: flex;
+       flex-direction: column;
+       box-sizing: border-box;
+       width: 40px;
+       height: 40px;
+       border-radius: 3px;
+       background-color: seagreen;
+       margin-left: auto;
+       margin-top: 8px;
+       cursor: pointer;
+       overflow: hidden;
+       justify-content: space-between;
+       padding: 10px 5px;
+   }
+
+   .header_container  .line 
+   {
+       width: 100%;
+       height: 3px;
+       background-color: black;
+   }
+   .learn_more
+   {
+       display: none;
+   }
+}
+
+@media only screen and (max-width:592px)
+{
+    .hide_phone
+    {
+        display: none;
+    }
+    .main_container_blog
+{
+    padding: 60px;
+}
+}
+
+@media only screen and (min-width:400px)
+{
+    .social_icons
+    {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:400px)
+{
+    .email
+    {
+        display: none;
+    }
+    .number
+    {
+        display: none;
+    }
+    .main_container_blog
+{
+    padding: 40px;
+}
+}
+
+    /*FLOATING IMAGE AND TEXT*/
+
+    .floating_image
+    {
+        
+     height: auto;
+    }
+
+    .floating_image > div
+    {
+    text-align: center;
+    padding: 20px;
+    }
+
+    .floating_picture
+    {
+      flex-basis: 300px;
+    }
+
+    /*Question Section*/
+    .questions
+    {
+        padding: 85px;
+        background-color: white;
+        color: black;   
+    }
+
+    .button
+    {
+        background-color: black;
+        padding: 15px 30px;
+        border-radius: 30px;
+        color: white;
+        margin-bottom: 0px;
+        border: 0;
+        font-size: 16px;
+        cursor: pointer;
+        float: right;
+        margin-right: 120px;
+    }
+
+    .button:hover
+    {
+        background-color: seagreen;
+    }
+
+    /*why*/
+    .why
+    {
+     margin-top: 100px;
+    }
+
+    .why_trade1 
+    {
+        flex-wrap: wrap;
+        padding: 20px;
+        align-items: center;   
+    }
+
+    .why_trade 
+    {
+        padding: 50px;
+        text-align: center;
+    }
+
+    .why_trade1
+    {
+         max-width: 400px;
+         height: 180px;
+         background-color: white;
+         box-shadow: 0px 1px 10px silver;
+         margin: 10px 20px;
+         overflow: hidden;
+         text-align: center;
+         padding: 50px;
+    }
+
+    .ads
+    {
+        margin-top: 30px;
+        width: 20px;
+    }
+ 
+      /*what users say*/
+
+      .main_container_blog
+      {
+         display: flex;
+         background-color: seagreen;
+         
+      }
+  
+          .main_body 
+          {
+              text-align: center;
+          }
+  
+          .change 
+          {
+           padding: 30px;
+           text-align: center;
+           margin-left: 15%;
+           margin-right: 15%;
+          }
+  
+         .change p::before {
+             content: '';
+             animation: animate infinite 30s;
+         }
+  
+         @keyframes animate {
+             0%{
+                 content: 'Good job. The waiting on the confirmation is very swift. Thanks a lot.';
+             }
+             20%{
+              content: 'Kentro Technologies is the best and reliable tech gadgets company in Nigeria. Best rates ever and Fast payment with no delay. Thank you very much.';
+          }
+          40%{
+              content: 'Kentro Technologies has made made buying and selling of electronic gadgets very easy.';
+          }
+          60%{
+              content: 'Swift buying and selling orders. the best ever. That is why I have been trading with them for more than 3 years now!';
+          }
+          80%{
+              content: 'So far that I have used this platform, no issues. It has been very reliable';
+          }
+          100%{
+              content: 'Hi guys, I have been using this site for aver a year now and they are really good. I would recommend Kentro Technologies to anyone. It is just as simple as ABC';
+          }
+         }
+  
+         .change h4 
+         {
+             padding: 10px;
+         }
+  
+         .change h4::before {
+          content: '';
+          animation: people infinite 30s;
+      }
+  
+      @keyframes people {
+          0%{
+                 content: 'Kemi Joeph';
+             }
+             20%{
+              content: 'Jethro Abejirin ';
+          }
+          40%{
+              content: 'Kingsley pius';
+          }
+          60%{
+              content: 'Ruth Akanbi';
+          }
+          80%{
+              content: 'Anjorin Abejirin';
+          }
+          100%{
+              content: 'Courage Usifoh';
+          }
+         }
+  
+             /*Our Mission*/
+
+    .our_mission_container 
+    {
+     margin-top: 80px;
+    }
+
+    .our_mission 
+    {
+        font-size: 18px;
+            padding: 50px;
+            background-color: black;
+            text-align: left;
+    }
+
+    .our_mission img{
+        height: 30px;
+        width: 24px;
+        padding: 0 10px;
+    }
+
+    .our_mission p
+    {
+        margin-top: 20px;
+    }
+
+           /*main body*/
+           .main_body1{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .head1 {
+            font-size: 40px;
+            padding: 40px;
+            background-color: rgb(42, 39, 39);
+        }
+
+        .main_container1
+    {
+     display: flex;
+     width: 100%;
+    }
+
+/*Contact us form*/ 
+    @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+    .form_body
+    {
+        height: 700px;
+        background-color: seagreen;
+    }
+    .wrapper{
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        background: lightcyan;
+        padding: 50px;
+        border-radius: 5px;
+        height: 530px;
+        
+     }
+     
+     .wrapper h2{
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #332902;
+     }
+     
+     .wrapper .input_field{
+        margin-bottom: 10px;
+     }
+     
+     .wrapper .input_field input[type="text"],
+     .wrapper textarea{
+     width: 100%;
+     border: 1px solid whitesmoke;
+     padding: 10px;   
+     }
+     
+     .wrapper textarea{
+       height: 80px;
+       resize: none;
+     }
+     
+     .wrapper .btn input[type="submit"]{
+        border: 0;
+        margin-top: 15px;
+        padding: 10px;
+        width: 100%;
+        background: burlywoodwae;
+        letter-spacing: 5px;
+        cursor: pointer;
+     }
+     
+     .wrapper #error_message{
+        margin-bottom: 20px;
+        padding: 0px;
+        background: red;
+        text-align:  center;
+        font-size: 14px;
+     }
+     
+     .input_field 
+     {
+        padding: 10px;
+     }
+     input 
+     {
+        padding: 4px;
+     }
+     
